@@ -96,7 +96,7 @@ class Booking extends Component {
                             amount={amount}
                         />
 
-                        <img src={imgSrc} style={{
+                        <img src={imgSrc} alt='imgSrc' style={{
                             position: 'relative',
                             top: 0,
                             right: 0,
