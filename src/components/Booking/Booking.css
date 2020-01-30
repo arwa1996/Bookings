@@ -1,0 +1,18 @@
+.Container {
+    text-align: center;
+    word-wrap: break-word;
+    background: #fff;
+    padding: 24;
+     min-height: 100;
+  }
+  
+  .Tour{
+    width: 50%;
+    margin:  10px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
