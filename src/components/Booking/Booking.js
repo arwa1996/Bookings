@@ -68,7 +68,7 @@ class Booking extends Component {
 
                     return (
                         <div className="Tour" key={index} onClick={() => this.showModal(index)}>
-                            <p>{tour.name}</p>
+                            <p  >{tour.name}</p>
                         </div>
                     );
                 })
