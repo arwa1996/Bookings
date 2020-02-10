@@ -14,10 +14,10 @@ class Booking extends Component {
 
     state = {
         tours: [
-            { id: '1', name: 'OldCairo', adults: '10', children: '5', infantNumber: '55', Date: '1/1/2020', Amount: '100 LE', imgSrc: oldCairo },
-            { id: '2', name: 'Egyptian Museum', adults: '30', children: '0', infantNumber: '31', Date: '1/1/2020', Amount: '150 LE', imgSrc: Egyptian },
-            { id: '3', name: 'Pyramids', adults: '70', children: '3', infantNumber: '15', Date: '1/1/2020', Amount: '500 LE', imgSrc: pyramids },
-            { id: '4', name: 'Tahrir Square', adults: '20', children: '6', infantNumber: '115', Date: '1/1/2020', Amount: '200 LE', imgSrc: tahrirSquare }
+            { id: '1', name: 'OldCairo', adults: '10', children: '5', infantNumber: '55', Date: '1/1/2020', Amount: '100 LE', imgSrc: oldCairo, alt: 'Old Cairo' },
+            { id: '2', name: 'Egyptian Museum', adults: '30', children: '0', infantNumber: '31', Date: '1/1/2020', Amount: '150 LE', imgSrc: Egyptian, alt: 'Egyptian Museum' },
+            { id: '3', name: 'Pyramids', adults: '70', children: '3', infantNumber: '15', Date: '1/1/2020', Amount: '500 LE', imgSrc: pyramids, alt: 'Pyramids' },
+            { id: '4', name: 'Tahrir Square', adults: '20', children: '6', infantNumber: '115', Date: '1/1/2020', Amount: '200 LE', imgSrc: tahrirSquare, alt: 'Tahrir Square' }
         ],
         showTours: false,
         visible: false,
@@ -61,6 +61,7 @@ class Booking extends Component {
         const infantNumber = this.state.clickedTour.infantNumber;
         const amount = this.state.clickedTour.Amount;
         const imgSrc = this.state.clickedTour.imgSrc;
+        const alt = this.state.clickedTour.alt;
 
         tours =
             <div>
@@ -96,7 +97,8 @@ class Booking extends Component {
                             amount={amount}
                         />
 
-                        <img src={imgSrc} alt='imgSrc' style={{
+
+                        <img src={imgSrc} alt={alt} style={{
                             position: 'relative',
                             top: 0,
                             right: 0,
